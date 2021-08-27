@@ -1,1 +1,97 @@
-*,*::after,*::before{margin:0;padding:0;box-sizing:border-box}body{width:100%;min-height:100vh;padding:50px 10px;background-color:#111a28;display:flex;align-items:center;justify-content:center;flex-direction:column;font-family:"Mulish",sans-serif}.display{text-align:center;margin-bottom:50px}.display h2{color:#f2f2f2}.display .segment{font-size:30px;padding:5px 10px;background-color:#1d293a;border-radius:5px;color:#111a28;display:inline-block;margin:2px 4px;font-weight:700;text-transform:uppercase;pointer-events:none;cursor:none}.display .segment.active{color:#259846}.box{display:grid;align-items:center;justify-content:center;grid-template-columns:repeat(5, 1fr);grid-gap:10px}.box .btn{font-size:30px;display:inline-flex;align-items:center;justify-content:center;background-color:#1d293a;color:#111a28;border:none;transition:.3s;border-radius:5px;width:60px;height:50px}.box .btn:hover{background-color:#165dce}.box .btn:focus{border:none;outline:none}.box .btn.clicked{background-color:#982d25;pointer-events:none}.box .btn.clicked:hover{background-color:#982d25}.box .btn.correct{background-color:#259846;pointer-events:none}.box .btn.correct:hover{background-color:#259846}@media screen and (max-width: 420px){.box{width:80%}.box .btn{font-size:25px;width:100%}}
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px 10px;
+    background-color: #111a28;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Mulish", sans-serif;
+}
+.display {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.display h2 {
+    color: #f2f2f2;
+}
+.display .segment {
+    font-size: 30px;
+    padding: 5px 10px;
+    background-color: #1d293a;
+    border-radius: 5px;
+    color: #111a28;
+    display: inline-block;
+    margin: 2px 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    pointer-events: none;
+    cursor: none;
+}
+.display .segment.active {
+    color: #259846;
+}
+.box {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+}
+.box .btn {
+    font-size: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1d293a;
+    color: #111a28;
+    border: none;
+    transition: 0.3s;
+    border-radius: 5px;
+    width: 60px;
+    height: 50px;
+}
+.box .btn:hover {
+    background-color: #165dce;
+}
+.box .btn:focus {
+    border: none;
+    outline: none;
+}
+.box .btn.clicked {
+    background-color: #982d25;
+    pointer-events: none;
+}
+.box .btn.clicked:hover {
+    background-color: #982d25;
+}
+.box .btn.correct {
+    background-color: #259846;
+    pointer-events: none;
+}
+.box .btn.correct:hover {
+    background-color: #259846;
+}
+.help {
+    color: #999;
+    text-align: center;
+    display: inline-block;
+    margin-top: 30px;
+}
+@media screen and (max-width: 420px) {
+    .box {
+        width: 80%;
+    }
+    .box .btn {
+        font-size: 25px;
+        width: 100%;
+    }
+}
